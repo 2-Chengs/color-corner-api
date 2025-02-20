@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sheens",
+  "info": {
+    "singularName": "sheen",
+    "pluralName": "sheens",
+    "displayName": "Sheen"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
