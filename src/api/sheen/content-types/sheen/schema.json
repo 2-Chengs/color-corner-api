@@ -4,7 +4,8 @@
   "info": {
     "singularName": "sheen",
     "pluralName": "sheens",
-    "displayName": "Sheen"
+    "displayName": "Sheen",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,6 +13,12 @@
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "sheens"
     }
   }
 }

@@ -12,6 +12,18 @@
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "category"
+    },
+    "sheens": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sheen.sheen",
+      "mappedBy": "category"
     }
   }
 }

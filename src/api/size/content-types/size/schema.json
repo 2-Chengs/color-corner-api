@@ -12,6 +12,12 @@
   "attributes": {
     "Litres": {
       "type": "decimal"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "size"
     }
   }
 }
